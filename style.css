@@ -1,0 +1,86 @@
+
+
+.s{
+    margin-top: 0px;
+}
+
+.text-animation {
+    animation: text-animation 1s ease-in-out forwards;
+  }
+  
+  @keyframes text-animation {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+ .cards{
+    justify-content: center;
+align-items: center;
+display: flex;
+}
+
+.bg{
+  object-fit: contain;
+  background: #16c4ca;
+}
+.imt{
+  margin-top: 10%;
+}
+.imt h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  z-index: 1;
+}
+
+
+
+.container {
+  position: relative;
+}
+
+.image {
+  margin-left: 50%;
+  width: 100%;
+  height: 600px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/01/29/21/16/nurse-2019420_960_720.jpg);
+
+}
+
+.text {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(64, 123, 201);
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  z-index: 1;
+ filter: blur();
+}
+
+.box {
+  position: relative;
+  
+  background-color: white;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+ 
+}
